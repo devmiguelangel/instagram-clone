@@ -46,6 +46,8 @@ services:
       - ./compose/envs/postgres.env
     ports:
       - '5432:5432'
+    networks:
+      - ig_network
     restart: unless-stopped
 
   # mongo:

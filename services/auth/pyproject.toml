@@ -47,3 +47,10 @@ select = [
 ignore = ["D401", "D417"]
 
 [tool.ruff.lint.flake8-quotes]
+inline-quotes = "single"
+multiline-quotes = "double"
+docstring-quotes = "double"
+
+[tool.ruff.format]
+# Use single quotes rather than double quotes.
+quote-style = "single"
